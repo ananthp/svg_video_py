@@ -1,0 +1,123 @@
+#!/bin/env python3
+
+from dataclasses import dataclass
+from pathlib import Path
+import math
+import os
+import subprocess
+
+@dataclass
+class Point:
+    """a 2D Point"""
+    x: float
+    y: float
+
+    def unpack(self):
+        return self.x, self.y
+
+class Rect:
+    def __init__(self, top_left: Point, width_px, height_px):
+        self.x1 = top_left.x
+        self.y1 = top_left.y
+        self.x2 = self.x1 + width_px
+        self.y2 = self.y1 + height_px
+        self.width = width_px
+        self.height = height_px
+
+    def top_left(self):
+        return Point(self.x1, self.y1)
+
+    def bottom_right(self):
+        return Point(self.x2, self.y2)
+
+    def shift_down(self, by_px):
+        self.y1 += by_px
+        self.y2 += by_px
+
+def export_area(rect, svg, png):
+    x1, y1 = rect.top_left().unpack()
+    x2, y2 = rect.bottom_right().unpack()
+    coords = f"{x1}:{y1}:{x2}:{y2}"
+    subprocess.run(["inkscape", "--export-area", coords, "-o", png, svg], capture_output=True)
+
+def calculate_advance(height, pace, fps):
+    shift_px_per_sec = height / pace
+    return shift_px_per_sec / fps
+
+class Scroller:
+    def __init__(self, svg, outpath, frame_width_px, frame_height_px,fps, pace):
+        """
+        svg: input SVG file path
+        outpath: directory to render output frames
+        frame_width_px, frame_height_px: width and height of the video frame
+        bottom_px: Y coordinate of the bottom of the SVG drawing in px. Decides how far to scroll.
+
+        pace: Number of seconds to scroll one screen full. float.
+        """
+        self.svg = svg # TODO: Validate. Here or in render?
+        self.outpath = Path(outpath)
+        self.rect = Rect(Point(0,0), frame_width_px, frame_height_px)
+        self.fps = fps
+        # number of pixels to shift down for each frame
+        self.advance_px = calculate_advance(height=frame_height_px, pace=pace, fps=fps)
+
+    def render(self):
+        self.validate_input()
+        self.create_outpath_if_required()
+        # TODO delete existing rendered frames?
+
+        total_height = self.get_svg_height()
+
+        estimated_frames = math.ceil(total_height / self.advance_px) + 3
+
+        # TODO
+        # This logic leaves a residue at last frame
+        # We'll have to render one more frame to get a clean
+        # last frame
+        # while self.rect.top_left().y <= total_height:
+        for current_frame in range(estimated_frames):
+            print(f"Rendering Frame {current_frame+1} / {estimated_frames}")
+            export_area(rect=self.rect,
+                    svg=self.svg, 
+                    png=self.output_file_path(current_frame))
+            self.advance()
+        
+    def advance(self):
+        self.rect.shift_down(self.advance_px)
+
+    def output_file_path(self, frame_number):
+        result = self.outpath / f"{frame_number:06}.png"
+        return result.resolve()
+
+    def validate_input(self):
+        pass
+
+    def create_outpath_if_required(self):
+        if not self.outpath.exists():
+            os.makedirs(self.outpath.resolve())
+
+    def get_svg_height(self):
+        """
+        gets the height of the drawing using inkscape.
+        This is nothing to do with the page size.
+        """
+        result = subprocess.run(["inkscape", "--query-height", self.svg], capture_output=True)
+        try:
+            height = float(result.stdout)
+
+            # The image may start at the middle or
+            # bottom of the page. The space above the first chunk
+            # is not accounted.
+            # adding a frame height ensures video scrolls fully
+            return height + self.rect.height
+        except ValueError:
+            print("Getting dimensions from SVG failed.\n")
+            print(result.stdout.decode("UTF-8"))
+            print(result.stderr.decode("UTF-8"))
+
+            return 0
+
+# test
+if __name__ == '__main__':
+    scroller = Scroller(svg="./scrolling_titles.svg", outpath="/tmp/rendered/", frame_width_px=1920, frame_height_px=1080, fps=30, pace=8)
+    scroller.render()
