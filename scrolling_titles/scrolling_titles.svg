@@ -5,6 +5,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1920"
@@ -18,7 +19,7 @@
      id="defs881">
     <marker
        style="overflow:visible;"
-       id="marker2408"
+       id="marker1943"
        refX="0.0"
        refY="0.0"
        orient="auto"
@@ -26,7 +27,67 @@
        inkscape:isstock="true">
       <path
          transform="scale(0.4) rotate(180) translate(10,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1941" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker1799"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1797" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker1663"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1661" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker1537"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1535" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker2408"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
          id="path2406" />
     </marker>
@@ -68,39 +129,9 @@
        inkscape:isstock="true">
       <path
          transform="matrix(-0.4,0,0,-0.4,-4,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
          id="path2376" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="marker2136"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Mend"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         transform="matrix(-0.4,0,0,-0.4,-4,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path2134" />
-    </marker>
-    <marker
-       style="overflow:visible;"
-       id="Arrow1Mend"
-       refX="0.0"
-       refY="0.0"
-       orient="auto"
-       inkscape:stockid="Arrow1Mend"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         transform="scale(0.4) rotate(180) translate(10,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path1681" />
     </marker>
     <marker
        style="overflow:visible;"
@@ -149,8 +180,8 @@
     <rect
        x="122.30748"
        y="70.37841"
-       width="297.8125"
-       height="81.956053"
+       width="449.58963"
+       height="159.9449"
        id="rect1488" />
     <rect
        x="122.30748"
@@ -242,36 +273,6 @@
        width="297.8125"
        height="81.956055"
        id="rect1666" />
-    <marker
-       style="overflow:visible"
-       id="Arrow1Mend-3"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Mend"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         transform="matrix(-0.4,0,0,-0.4,-4,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path1681-0" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="marker2136-2"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Mend"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         transform="matrix(-0.4,0,0,-0.4,-4,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path2134-5" />
-    </marker>
     <rect
        x="122.30748"
        y="70.37841"
@@ -356,17 +357,289 @@
        width="406.19337"
        height="121.3864"
        id="rect544" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956053"
+       id="rect534" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956053"
+       id="rect552" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="517.16733"
+       height="86.416414"
+       id="rect560" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956053"
+       id="rect580" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956053"
+       id="rect588" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956053"
+       id="rect594" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956053"
+       id="rect622" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="449.58963"
+       height="159.9449"
+       id="rect1488-3" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="449.58963"
+       height="159.9449"
+       id="rect2188" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect1490-6" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect2472" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect580-2" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect2475" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect588-9" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect2478" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect622-0" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect2573" />
+    <marker
+       style="overflow:visible"
+       id="marker1943-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1941-1" />
+    </marker>
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect1490-6-7" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect3251" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect622-0-9" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect3290" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect3379" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956053"
+       id="rect3403" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect3403-9" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect3414" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect588-7" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect3466" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect3499" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect3511" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="387.37343"
+       height="57.182915"
+       id="rect3513" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956053"
+       id="rect3519" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="332.70193"
+       height="194.64938"
+       id="rect2360-6" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="332.70193"
+       height="194.64938"
+       id="rect3550" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="332.70193"
+       height="194.64938"
+       id="rect2362-1" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="332.70193"
+       height="194.64938"
+       id="rect3553" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="297.8125"
+       height="81.956055"
+       id="rect3670" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="332.70193"
+       height="194.64938"
+       id="rect3706" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="332.70193"
+       height="194.64938"
+       id="rect3708" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="332.70193"
+       height="194.64938"
+       id="rect3879" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="332.70193"
+       height="194.64938"
+       id="rect3881" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="449.58963"
+       height="159.9449"
+       id="rect1488-3-8" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="449.58963"
+       height="159.9449"
+       id="rect4960" />
+    <rect
+       x="122.30748"
+       y="70.37841"
+       width="449.58963"
+       height="159.9449"
+       id="rect5012" />
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#000000"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.26962947"
-     inkscape:cx="1281.6608"
-     inkscape:cy="3216.5201"
+     inkscape:zoom="0.332392"
+     inkscape:cx="1066.185"
+     inkscape:cy="9130.9485"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -403,7 +676,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -413,359 +686,735 @@
      id="layer1">
     <text
        xml:space="preserve"
-       id="text1450"
-       style="font-size:25.4px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1452);"
-       x="96.049881"
-       y="0"
-       transform="translate(-17.352604,56.690739)"><tspan
-         x="129.84945"
-         y="93.423261"><tspan
-           style="text-align:center;text-anchor:middle">SCROLLING TITLES</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1458"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1460);"
-       x="96.049881"
-       y="0"
-       transform="translate(-17.352604,93.732411)"><tspan
-         x="178.60484"
-         y="85.741779"><tspan
-           style="shape-inside:url(#rect1460)">Ananth Pattabiraman</tspan></tspan></text>
-    <text
-       xml:space="preserve"
        id="text1466"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1468);"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1468);fill:#ffffff;fill-opacity:1;"
        x="96.049881"
        y="0"
-       transform="translate(-17.352604,269.94508)"><tspan
-         x="193.59081"
+       transform="translate(-17.352604,428.69511)"><tspan
+         x="169.1984"
          y="85.741779"><tspan
-           style="shape-inside:url(#rect1468)">1. Design SVG file.</tspan></tspan></text>
+           style="fill:#ffffff;fill-opacity:1">1. Design with </tspan><tspan
+           style="font-weight:bold;fill:#ffffff;fill-opacity:1">Inkscape</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text1472"
-       style="font-size:25.4px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1474);"
+       style="font-size:25.4px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1474);fill:#ffffff;fill-opacity:1;"
        x="96.049881"
        y="0"
-       transform="translate(-17.352604,220.73248)"><tspan
+       transform="translate(-17.352604,379.48251)"><tspan
          x="226.77568"
          y="93.423261"><tspan
-           style="text-align:center;text-anchor:middle">STEPS</tspan></tspan></text>
+           style="text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">STEPS</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text1476"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1478);"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1478);fill:#ffffff;fill-opacity:1;"
        x="96.049881"
        y="0"
-       transform="translate(-17.352604,306.98677)"><tspan
-         x="177.30949"
+       transform="translate(-17.352604,465.7368)"><tspan
+         x="140.27649"
          y="85.741779"><tspan
-           style="shape-inside:url(#rect1478)">2. Render using script</tspan></tspan></text>
+           style="fill:#ffffff;fill-opacity:1">2. Render using </tspan><tspan
+           style="font-weight:bold;fill:#ffffff;fill-opacity:1">SVG Video Py</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text1480"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1488);"
+       style="font-size:16.9333px;line-height:2;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1488);fill:#ffffff;fill-opacity:1;"
        x="96.049881"
        y="0"
-       transform="translate(-17.306022,455.15353)"><tspan
-         x="129.1597"
-         y="85.741779"><tspan
-           style="shape-inside:url(#rect1488)">Set page size to video frame size.</tspan></tspan></text>
+       transform="translate(-220.64081,783.5904)"><tspan
+         x="331.1589"
+         y="92.091767"><tspan
+           style="fill:#ffffff;fill-opacity:1">Set 
+</tspan></tspan><tspan
+         x="297.82574"
+         y="125.95837"><tspan
+           style="fill:#ffffff;fill-opacity:1">PAGE SIZE
+</tspan></tspan><tspan
+         x="338.364"
+         y="159.82497"><tspan
+           style="fill:#ffffff;fill-opacity:1">to
+</tspan></tspan><tspan
+         x="254.66283"
+         y="193.69156"><tspan
+           style="fill:#ffffff;fill-opacity:1">VIDEO FRAME SIZE</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text1484"
-       style="font-size:25.4px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1490);"
+       style="font-size:25.4px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1490);fill:#ffffff;fill-opacity:1;"
        x="96.049881"
        y="0"
-       transform="translate(-17.352604,405.94093)"><tspan
-         x="206.86214"
+       transform="translate(-17.352604,602.26185)"><tspan
+         x="198.4674"
          y="93.423261"><tspan
-           style="text-align:center;text-anchor:middle">SVG FILE</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1486"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1492)"
-       x="96.049881"
-       y="0"
-       transform="translate(-34.471945,500.20053)"><tspan
-         x="139.00203"
-         y="85.741779"><tspan
-           style="text-align:center;text-anchor:middle;shape-inside:url(#rect1492)">Layout all the contents as one long </tspan></tspan><tspan
-         x="251.13407"
-         y="106.90841"><tspan
-           style="text-align:center;text-anchor:middle;shape-inside:url(#rect1492)">drawing.</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1534"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:justify;white-space:pre;shape-inside:url(#rect1536);"
-       x="52.395885"
-       y="0"
-       transform="translate(-72.258045,678.38425)"><tspan
-         x="122.30664"
-         y="85.741779"><tspan
-           dx="0 0 0 0.39115 0 0 0 0 0 0.39114761 0 0 0 0 0.39114809 0 0 0 0.39115572 0 0 0 0 0 0 0.39114046 0 0 0.39114046 0 0 0 0.39114046 0 0 0 0 0.39114046 0 0 0 0.39117098">A. Start with the middle of the page and layout </tspan></tspan><tspan
-         x="122.30664"
-         y="106.90841"><tspan>contents.</tspan></tspan></text>
-    <rect
-       style="fill:#ff4081;stroke:#ff4081;stroke-width:4.99999"
-       id="rect1538"
-       width="198.02649"
-       height="115.79076"
-       x="50.103573"
-       y="833.03748" />
-    <text
-       xml:space="preserve"
-       id="text1486-4"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1492-6);"
-       x="96.049881"
-       y="0"
-       transform="translate(-139.52445,806.10008)"><tspan
-         x="237.03713"
-         y="85.741779"><tspan
-           style="shape-inside:url(#rect1492-6)">Directed By</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1583"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1585);"
-       x="96.049881"
-       y="0"
-       transform="translate(-139.52445,827.26676)"><tspan
-         x="269.00713"
-         y="85.741779"><tspan
-           style="shape-inside:url(#rect1585)">XYZ</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1601"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1603);"
-       x="96.049881"
-       y="0"
-       transform="translate(-139.52445,885.47513)"><tspan
-         x="235.14911"
-         y="85.741779"><tspan
-           style="shape-inside:url(#rect1603)">Cast &amp; Crew</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1607"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1609);"
-       x="96.049881"
-       y="0"
-       transform="translate(-139.52445,909.28766)"><tspan
-         x="263.10589"
-         y="85.741779"><tspan
-           style="shape-inside:url(#rect1609)">Alpha</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1611"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1613);"
-       x="96.049881"
-       y="0"
-       transform="translate(-139.52445,930.45434)"><tspan
-         x="263.08898"
-         y="85.741779"><tspan
-           style="shape-inside:url(#rect1613)">Bravo</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1615"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1617);"
-       x="96.049881"
-       y="0"
-       transform="translate(-139.52445,951.62102)"><tspan
-         x="256.82365"
-         y="85.741779"><tspan
-           style="shape-inside:url(#rect1617)">Charlie</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1526-0"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:start;white-space:pre;shape-inside:url(#rect1528-3);"
-       x="52.395885"
-       y="0"
-       transform="translate(244.36343,765.35658)"><tspan
-         x="122.30664"
-         y="85.741779"><tspan>Page</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1658"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:start;white-space:pre;shape-inside:url(#rect1660);"
-       x="52.395885"
-       y="0"
-       transform="translate(178.25903,820.02826)"><tspan
-         x="122.30664"
-         y="85.741779"><tspan>Centered first chunk</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1664"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:start;white-space:pre;shape-inside:url(#rect1666);"
-       x="52.395885"
-       y="0"
-       transform="translate(192.01939,914.43108)"><tspan
-         x="122.30664"
-         y="85.741779"><tspan>Rest of
-</tspan></tspan><tspan
-         x="122.30664"
-         y="106.90841"><tspan>scrollable content</tspan></tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
-       d="m 355.81065,846.23216 -96.01689,2.92877"
-       id="path1670"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-3)"
-       d="m 293.28321,901.26692 -85.0898,0.24315"
-       id="path1670-9"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2136)"
-       d="m 293.28321,901.26692 -85.0898,0.24315"
-       id="path2078"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2136-2)"
-       d="m 297.12045,1001.4304 -85.0898,0.2431"
-       id="path2078-4"
-       sodipodi:nodetypes="cc" />
-    <text
-       xml:space="preserve"
-       id="text2314"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:justify;white-space:pre;shape-inside:url(#rect2354);"
-       x="52.395885"
-       y="0"
-       transform="translate(-72.258045,1111.7726)"><tspan
-         x="122.30664"
-         y="85.741779"><tspan
-           dx="0 0 0 3.7226548 0 0 0 3.7226529 0 0 0 3.7226529 0 0 0 3.7226529 0 0 0 0 0 0 0 0 0 0 3.7226529 0 0 0 0 0 0 0 3.7226529 0 0 0 0 3.7226529"
-           style="shape-inside:url(#rect2354)">B. Put all the scrollable content just BELOW </tspan></tspan><tspan
-         x="122.30664"
-         y="106.90841"><tspan
-           style="shape-inside:url(#rect2354)">the </tspan><tspan
-           style="shape-inside:url(#rect2354)">page.</tspan></tspan></text>
-    <rect
-       style="fill:#ff4081;stroke:#ff4081;stroke-width:4.99999"
-       id="rect2316"
-       width="198.02649"
-       height="115.79076"
-       x="50.103573"
-       y="1245.2567" />
-    <text
-       xml:space="preserve"
-       id="text2322"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect2360);"
-       x="96.049881"
-       y="0"
-       transform="translate(-139.52445,1291.346)"><tspan
-         x="235.14911"
-         y="85.741779"><tspan
-           style="shape-inside:url(#rect2360)">Cast &amp; Crew</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text2324"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect2362);"
-       x="96.049881"
-       y="0"
-       transform="translate(-139.52445,1315.1586)"><tspan
-         x="263.10589"
-         y="85.741779"><tspan
-           style="shape-inside:url(#rect2362)">Alpha</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text2326"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect2364);"
-       x="96.049881"
-       y="0"
-       transform="translate(-139.52445,1336.3254)"><tspan
-         x="263.08898"
-         y="85.741779"><tspan
-           style="shape-inside:url(#rect2364)">Bravo</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text2328"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect2366);"
-       x="96.049881"
-       y="0"
-       transform="translate(-139.52445,1357.4922)"><tspan
-         x="256.82365"
-         y="85.741779"><tspan
-           style="shape-inside:url(#rect2366)">Charlie</tspan></tspan></text>
+           style="fill:#ffffff;fill-opacity:1">INKSCAPE</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text2334"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:start;white-space:pre;shape-inside:url(#rect2368);"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:start;white-space:pre;shape-inside:url(#rect2368);fill:#ffffff;fill-opacity:1;"
        x="52.395885"
        y="0"
-       transform="translate(244.36343,1177.8574)"><tspan
+       transform="translate(254.49694,1211.7609)"><tspan
          x="122.30664"
-         y="85.741779"><tspan>Page</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text2338"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:start;white-space:pre;shape-inside:url(#rect2370);"
-       x="52.395885"
-       y="0"
-       transform="translate(178.25903,1232.2493)"><tspan
-         x="122.30664"
-         y="85.741779"><tspan>Nothing on the page</tspan></tspan></text>
+         y="85.741779"><tspan
+           style="fill:#ffffff;fill-opacity:1">PAGE</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text2342"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:start;white-space:pre;shape-inside:url(#rect2372);"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:start;white-space:pre;shape-inside:url(#rect2372);fill:#ffffff;fill-opacity:1;"
        x="52.395885"
        y="0"
-       transform="translate(195.15477,1318.0288)"><tspan
+       transform="translate(234.05553,1355.2525)"><tspan
          x="122.30664"
-         y="85.741779"><tspan>Contents</tspan></tspan></text>
+         y="85.741779"><tspan
+           style="fill:#ffffff;fill-opacity:1">DESIGN</tspan></tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2408)"
-       d="m 355.81065,1256.9776 -96.01689,2.9288"
+       style="fill:none;stroke:#ffffff;stroke-width:2.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2408)"
+       d="m 365.94416,1290.8811 -96.01689,2.9288"
        id="path2344"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2398)"
-       d="m 293.28321,1313.4882 -85.0898,0.2431"
-       id="path2346"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2388)"
-       d="m 293.28321,1312.9806 -85.0898,0.2431"
-       id="path2348"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2378)"
-       d="m 302.94132,1397.0668 -85.0898,0.2431"
+       style="fill:none;stroke:#ffffff;stroke-width:2.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2378)"
+       d="m 343.62359,1434.7737 -85.0898,0.2431"
        id="path2350"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       id="text2352"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:justify;white-space:pre;shape-inside:url(#rect2374);"
-       x="52.395885"
-       y="0"
-       transform="translate(-72.258045,1418.1603)"><tspan
-         x="122.30664"
-         y="85.741779"><tspan
-           dx="0 0 0 0 0 3.1641769 0 0 0 0 3.1641736 0 0 0 3.1641736 0 0 0 0 0 0 3.1641812 0 0 0 0 0 3.1641812 0 0 3.1641965 0 0 0 0 0 0 3.1641812 0 0 0 0 3.1641812"
-           style="shape-inside:url(#rect2374)">This way, the titles begin to appear from the </tspan></tspan><tspan
-         x="122.30664"
-         y="106.90841"><tspan
-           style="shape-inside:url(#rect2374)">bottom of an empty frame.</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       id="text533"
-       style="font-size:25.4px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect535);"
+       id="text1450"
+       style="font-size:25.4px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1452);fill:#ffffff;fill-opacity:1;"
        x="96.049881"
        y="0"
-       transform="translate(-17.352604,612.31606)"><tspan
-         x="192.58729"
-         y="93.423261"><tspan>EXAMPLES</tspan></tspan></text>
+       transform="translate(-17.263704,59.230739)"><tspan
+         x="129.84945"
+         y="93.423261"><tspan
+           style="text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">SCROLLING TITLES</tspan></tspan></text>
     <text
        xml:space="preserve"
-       id="text542"
-       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:justify;white-space:pre;shape-inside:url(#rect544);"
-       x="52.395885"
+       id="text532"
+       style="font-size:19.7556px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect534);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
        y="0"
-       transform="translate(-72.258045,1011.7595)"><tspan
-         x="122.30664"
+       transform="translate(-17.352604,34.612873)"><tspan
+         x="223.63161"
+         y="88.302334"><tspan
+           style="font-size:19.7556px;fill:#ffffff;fill-opacity:1">MAKING</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text550"
+       style="font-size:19.7556px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect552);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.232657,219.82128)"><tspan
+         x="234.90219"
+         y="88.302334"><tspan
+           style="font-size:19.7556px;fill:#ffffff;fill-opacity:1">USING</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text558"
+       style="font-size:25.4px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect560);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-127.61452,249.73083)"><tspan
+         x="221.13761"
+         y="93.423261"><tspan
+           style="fill:#ffffff;fill-opacity:1">OPEN SOURCE TOOLS </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text578"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect580);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.306022,641.02763)"><tspan
+         x="264.48192"
          y="85.741779"><tspan
-           dx="0 0 0 0 0 6.1571426 0 0 0 0 6.1571469 0 0 0 6.1571469 0 0 0 0 0 0 6.1571469 0 0 0 6.1571469 0 0 0 0 0 6.1571622 0 0 6.1571622 0 0 0 6.1571622">This way, the titles can start at the perfect </tspan></tspan><tspan
-         x="122.30664"
-         y="106.90841"><tspan>center.</tspan></tspan></text>
+           style="fill:#ffffff;fill-opacity:1">is </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text586"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect588);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.306022,672.11193)"><tspan
+         x="172.0178"
+         y="85.741779"><tspan
+           style="fill:#ffffff;fill-opacity:1">Vector Graphics Editor</tspan></tspan></text>
+    <rect
+       style="fill:#0070e4;fill-opacity:1;stroke:none;stroke-width:4.99999"
+       id="rect1538-3"
+       width="198.02649"
+       height="115.79076"
+       x="275.74008"
+       y="862.06757" />
+    <text
+       xml:space="preserve"
+       id="text620"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect622);fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(103.47269,840.74875)"><tspan
+         x="219.93896"
+         y="85.741779"><tspan
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1">1920 x 1080</tspan></tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1537)"
+       d="m 432.06975,919.60733 h 40.71856"
+       id="path650"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1663)"
+       d="M 319.34569,919.60733 H 278.62713"
+       id="path1659"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1799)"
+       d="M 374.75332,905.67297 V 864.95441"
+       id="path1795"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1943)"
+       d="m 374.75332,934.25251 v 40.71856"
+       id="path1939"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       id="text1480-5"
+       style="font-size:16.9333px;line-height:2;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1488-3);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-103.10051,1001.9039)"><tspan
+         x="316.79104"
+         y="92.091767"><tspan
+           style="shape-inside:url(#rect1488-3)">Layout
+</tspan></tspan><tspan
+         x="270.91029"
+         y="125.95837"><tspan
+           style="shape-inside:url(#rect1488-3)">ALL CONTENTS
+</tspan></tspan><tspan
+         x="338.5672"
+         y="159.82497"><tspan
+           style="shape-inside:url(#rect1488-3)">as
+</tspan></tspan><tspan
+         x="243.47844"
+         y="193.69156"><tspan
+           style="shape-inside:url(#rect1488-3)">ONE LONG DRAWING</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1484-1"
+       style="font-size:25.4px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1490-6);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.212892,1614.1268)"><tspan
+         x="180.80179"
+         y="93.423261"><tspan
+           style="fill:#ffffff;fill-opacity:1">SVG Video Py</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text578-2"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect580-2);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.085903,1652.8926)"><tspan
+         x="264.48192"
+         y="85.741779"><tspan
+           style="fill:#ffffff;fill-opacity:1">is</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text586-7"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect588-9);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.331435,1683.9769)"><tspan
+         x="170.37528"
+         y="85.741779"><tspan
+           style="fill:#ffffff;fill-opacity:1">Tools to Produce Video</tspan></tspan></text>
+    <rect
+       style="fill:#0070e4;fill-opacity:1;stroke:none;stroke-width:4.99999"
+       id="rect2316"
+       width="198.02649"
+       height="115.79076"
+       x="50.103573"
+       y="1243.671" />
+    <text
+       xml:space="preserve"
+       id="text2322"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect2360);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-139.52445,1289.7573)"><tspan
+         x="221.52627"
+         y="85.741779"><tspan
+           style="shape-inside:url(#rect2360);fill:#ffffff;fill-opacity:1">CAST &amp; CREW</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text2324"
+       style="font-size:16.9333px;line-height:2;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect2362);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-139.52445,1324.1533)"><tspan
+         x="263.10589"
+         y="92.091767"><tspan
+           style="shape-inside:url(#rect2362);fill:#ffffff;fill-opacity:1">Alpha
+</tspan></tspan><tspan
+         x="263.08898"
+         y="125.95837"><tspan
+           style="shape-inside:url(#rect2362);fill:#ffffff;fill-opacity:1">Bravo
+</tspan></tspan><tspan
+         x="256.82365"
+         y="159.82497"><tspan
+           style="shape-inside:url(#rect2362);fill:#ffffff;fill-opacity:1">Charlie
+</tspan></tspan><tspan
+         x="265.67976"
+         y="193.69156"><tspan
+           style="shape-inside:url(#rect2362);fill:#ffffff;fill-opacity:1">Delta
+</tspan></tspan><tspan
+         x="275.55186"
+         y="227.55817"><tspan
+           style="shape-inside:url(#rect2362);fill:#ffffff;fill-opacity:1">***</tspan></tspan></text>
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:1.70404;stroke-miterlimit:4;stroke-dasharray:3.40807, 1.70404;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect2461"
+       width="150.03333"
+       height="229.23755"
+       x="74.100159"
+       y="1360.2761" />
+    <text
+       xml:space="preserve"
+       id="text620-9"
+       style="font-size:25.4px;line-height:1.45;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect622-0);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.18749,1803.5001)"><tspan
+         x="213.85978"
+         y="95.963261"><tspan
+           style="font-size:25.4px;fill:#ffffff;fill-opacity:1">Inkscape
+</tspan></tspan><tspan
+         x="219.42242"
+         y="132.79326"><tspan
+           style="font-size:25.4px;fill:#ffffff;fill-opacity:1">SVG file</tspan></tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.167811px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 244.26166,1961.1477 v 48.3346 h -14.9973 L 254,2036.3835 l 24.73564,-26.9012 h -14.9973 v -48.3346 z"
+       id="path3240"
+       sodipodi:nodetypes="cccccccc" />
+    <text
+       xml:space="preserve"
+       id="text1484-1-5"
+       style="font-size:25.4px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1490-6-7);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.809791,1988.6428)"><tspan
+         x="180.80179"
+         y="93.423261"><tspan
+           style="fill:#ffffff;fill-opacity:1">SVG Video Py</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text3377"
+       style="font-size:25.4px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect3379);"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.809791,2418.0506)" />
+    <text
+       xml:space="preserve"
+       id="text3401"
+       style="font-size:25.4px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect3403-9);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.098609,2718.9896)"><tspan
+         x="227.16936"
+         y="93.423261"><tspan
+           style="fill:#ffffff;fill-opacity:1">LINKS</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text586-3"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect588-7);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.195956,2805.0065)"><tspan
+         x="232.97756"
+         y="85.741779"><tspan
+           style="fill:#ffffff;fill-opacity:1">Inkscape</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text3497"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect3499);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.483832,2832.8757)"><tspan
+         x="186.02162"
+         y="85.741779"><tspan
+           style="fill:#ffffff;fill-opacity:1">https://inkscape.org</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text3505"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect3511);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.610823,2928.4795)"><tspan
+         x="210.93894"
+         y="85.741779"><tspan
+           style="fill:#ffffff;fill-opacity:1">SVG Video Py</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text3509"
+       style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect3513);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-62.087269,2956.3487)"><tspan
+         x="131.31992"
+         y="85.741779"><tspan
+           style="fill:#ffffff;fill-opacity:1">https://github.com/ananthp/svg_video_py</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text3517"
+       style="font-size:19.7556px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect3519);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.352604,113.98788)"><tspan
+         x="203.96497"
+         y="88.302334"><tspan
+           style="font-size:19.7556px;fill:#ffffff;fill-opacity:1">(like this one)</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text3668"
+       style="font-size:25.4px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect3670);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-17.339896,2140.7655)"><tspan
+         x="171.73401"
+         y="93.423261"><tspan
+           style="fill:#ffffff;fill-opacity:1">Scrolling Video</tspan></tspan></text>
+    <g
+       id="g4913"
+       transform="matrix(0.77011237,0,0,0.77011237,59.06618,539.81607)">
+      <rect
+         style="fill:#0070e4;stroke:none;stroke-width:4.99999"
+         id="rect1538-3-7-7"
+         width="198.02649"
+         height="115.79076"
+         x="157.94046"
+         y="2324.3381" />
+      <text
+         xml:space="preserve"
+         id="text2322-1"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect2360-6);fill:#ffffff;fill-opacity:1;"
+         x="96.049881"
+         y="0"
+         transform="translate(-31.68757,2350.3148)"><tspan
+           x="221.52627"
+           y="85.741779"><tspan
+             style="shape-inside:url(#rect2360-6);fill:#ffffff;fill-opacity:1">CAST &amp; CREW</tspan></tspan></text>
+      <rect
+         style="fill:#0070e4;stroke:none;stroke-width:4.99999"
+         id="rect3815"
+         width="198.02649"
+         height="115.79076"
+         x="157.90291"
+         y="2448.5293" />
+      <g
+         id="g3894"
+         transform="translate(128.50568,62.593351)"
+         style="fill:#ffffff;fill-opacity:1">
+        <text
+           xml:space="preserve"
+           id="text3678"
+           style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect3706);fill:#ffffff;fill-opacity:1;"
+           x="96.049881"
+           y="0"
+           transform="translate(-160.23082,2369.0472)"><tspan
+             x="221.52627"
+             y="85.741779"><tspan
+               style="shape-inside:url(#rect2360-6);fill:#ffffff;fill-opacity:1">CAST &amp; CREW</tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           id="text3700"
+           style="font-size:16.9333px;line-height:2;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect3708);fill:#ffffff;fill-opacity:1;"
+           x="96.049881"
+           y="0"
+           transform="translate(-160.23082,2403.4432)"><tspan
+             x="263.10589"
+             y="92.091767"><tspan
+               style="shape-inside:url(#rect2362-1);fill:#ffffff;fill-opacity:1">Alpha</tspan></tspan></text>
+      </g>
+      <rect
+         style="fill:#0070e4;stroke:none;stroke-width:4.99999"
+         id="rect3865"
+         width="198.02649"
+         height="115.79076"
+         x="157.90291"
+         y="2575.5293" />
+      <text
+         xml:space="preserve"
+         id="text3871"
+         style="font-size:16.9333px;line-height:1.25;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect3879);fill:#ffffff;fill-opacity:1;"
+         x="96.049881"
+         y="0"
+         transform="translate(-31.72514,2516.3072)"><tspan
+           x="221.52627"
+           y="85.741779"><tspan
+             style="shape-inside:url(#rect2360-6);fill:#ffffff;fill-opacity:1">CAST &amp; CREW</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         id="text3875"
+         style="font-size:16.9333px;line-height:2;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect3881);fill:#ffffff;fill-opacity:1;"
+         x="96.049881"
+         y="0"
+         transform="translate(-31.72514,2550.7032)"><tspan
+           x="263.10589"
+           y="92.091767"><tspan
+             style="shape-inside:url(#rect2362-1);fill:#ffffff;fill-opacity:1">Alpha
+</tspan></tspan><tspan
+           x="263.08898"
+           y="125.95837"><tspan
+             style="shape-inside:url(#rect2362-1);fill:#ffffff;fill-opacity:1">Bravo</tspan></tspan></text>
+      <g
+         id="g4065"
+         style="fill:#0070e4;fill-opacity:1">
+        <rect
+           style="fill:#0070e4;fill-opacity:1;stroke:none;stroke-width:1.465;stroke-miterlimit:4;stroke-dasharray:2.93, 1.465;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect3941"
+           width="23.707956"
+           height="20.249662"
+           x="123.37264"
+           y="2316.9314"
+           inkscape:tile-cx="135.22662"
+           inkscape:tile-cy="2334.4629"
+           inkscape:tile-w="23.707956"
+           inkscape:tile-h="20.249662"
+           inkscape:tile-x0="123.37264"
+           inkscape:tile-y0="2324.3381" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(0,40.499324)"
+           id="use4005"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(0,80.998648)"
+           id="use4007"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(0,121.49797)"
+           id="use4009"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(0,161.9973)"
+           id="use4011"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(0,202.49662)"
+           id="use4013"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(0,242.99594)"
+           id="use4015"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(0,283.49527)"
+           id="use4017"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(0,323.99459)"
+           id="use4019"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(0,364.49392)"
+           id="use4021"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+      </g>
+      <g
+         id="g4053"
+         transform="translate(-26.458334)"
+         style="fill:#0070e4;fill-opacity:1">
+        <rect
+           style="fill:#0070e4;fill-opacity:1;stroke:none;stroke-width:1.465;stroke-miterlimit:4;stroke-dasharray:2.93, 1.465;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4023"
+           width="23.707956"
+           height="20.249662"
+           x="393.2475"
+           y="2316.9314"
+           inkscape:tile-cx="135.22662"
+           inkscape:tile-cy="2334.4629"
+           inkscape:tile-w="23.707956"
+           inkscape:tile-h="20.249662"
+           inkscape:tile-x0="123.37264"
+           inkscape:tile-y0="2324.3381" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(269.87511,40.499324)"
+           id="use4025"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(269.87511,80.998648)"
+           id="use4027"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(269.87511,121.49797)"
+           id="use4029"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(269.87511,161.9973)"
+           id="use4031"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(269.87511,202.49662)"
+           id="use4033"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(269.87511,242.99594)"
+           id="use4035"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(269.87511,283.49527)"
+           id="use4037"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(269.87511,323.99459)"
+           id="use4039"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+        <use
+           x="0"
+           y="0"
+           inkscape:tiled-clone-of="#rect3941"
+           xlink:href="#rect3941"
+           transform="translate(269.87511,364.49392)"
+           id="use4041"
+           width="100%"
+           height="100%"
+           style="fill:#0070e4;fill-opacity:1" />
+      </g>
+    </g>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.167811px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 244.26166,2113.2705 v 48.3346 h -14.9973 L 254,2188.5063 l 24.73564,-26.9012 h -14.9973 v -48.3346 z"
+       id="path4836"
+       sodipodi:nodetypes="cccccccc" />
+    <text
+       xml:space="preserve"
+       id="text1480-5-4"
+       style="font-size:16.9333px;line-height:2;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect1488-3-8);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-93.355574,3068.2562)"><tspan
+         x="264.17932"
+         y="92.091767"><tspan
+           style="shape-inside:url(#rect1488-3-8)">This Video is made
+</tspan></tspan><tspan
+         x="282.67894"
+         y="125.95837"><tspan
+           style="shape-inside:url(#rect1488-3-8)">using the same
+</tspan></tspan><tspan
+         x="270.58014"
+         y="159.82497"><tspan
+           style="shape-inside:url(#rect1488-3-8)">tools and process.</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text5010"
+       style="font-size:16.9333px;line-height:2;font-family:'Libre Baskerville';-inkscape-font-specification:'Libre Baskerville, Normal';text-align:center;white-space:pre;shape-inside:url(#rect5012);fill:#ffffff;fill-opacity:1;"
+       x="96.049881"
+       y="0"
+       transform="translate(-93.380968,3211.1321)"><tspan
+         x="244.88389"
+         y="92.091767"><tspan
+           style="shape-inside:url(#rect5012)">©</tspan><tspan
+           style="shape-inside:url(#rect5012)"> Ananth Pattabiraman</tspan></tspan></text>
   </g>
 </svg>
