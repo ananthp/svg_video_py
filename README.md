@@ -4,8 +4,9 @@ Utilities to produce videos using SVG files.
 
 ## Scrolling Titles
     
-Use `scroll.py` to generate videos like end-credits in movies. It takes an SVG file, and generates video frames as a
- sequence of PNG files. (Currently hardcoded to process `scrolling_titles.svg`)
+Use `scroll.py` to generate videos like end-credits in movies. It takes an SVG file, and generates video frames as a sequence of PNG files. (Currently hardcoded to process `scrolling_titles.svg`)
+
+* Requires [inkscape](https://inkscape.org) to be installed on the system.
 
 ## Combining Images
 
@@ -14,4 +15,7 @@ you can use `scroll.py` to generate the images, and finally produce the video wi
 
 `./render_pngs_to_video.py --help` for detailed usage info.
 
-Note: Ideally, `--fps` should match the value used to generate the image sequence.
+Notes:
+
+* Ideally, `--fps` should match the value used to generate the image sequence.
+* Requires [ffmpeg](https://ffmpeg.org) to be installed on the system.
