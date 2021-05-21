@@ -87,6 +87,7 @@ class Scroller:
             source = self.cache(tmpdir)
 
         total_height = self.get_svg_height()
+
         estimated_frames = math.ceil(total_height / self.advance_px) + 1
         for current_frame in range(estimated_frames):
             print(f"Rendering Frame {current_frame+1} / {estimated_frames}")
@@ -96,7 +97,9 @@ class Scroller:
             self.advance()
         
     def cache(self, tmpdir):
-        full_height = self.get_svg_height()
+        # we have to cache the full image + one screen full of the botom portion
+        # to fully scroll away the contents.
+        full_height = self.get_svg_height() + self.rect.height
         full_image_png = Path(tmpdir.name)/"full.png"
         export_area(rect=Rect(ORIGIN, self.rect.width, full_height),
                 source=self.svg,
@@ -142,7 +145,7 @@ if __name__ == '__main__':
     scroller = Scroller(svg="./scrolling_titles.svg",
                         outpath="/tmp/rendered/",
                         frame_width_px=1920, frame_height_px=1080,
-                        fps=5, pace=8,
+                        fps=30, pace=8,
                         enable_caching=True
                         )
     scroller.render()
