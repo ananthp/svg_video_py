@@ -8,6 +8,13 @@ Use `scroll.py` to generate videos like end-credits in movies. It takes an SVG f
 
 * Requires [inkscape](https://inkscape.org) to be installed on the system.
 
+Demo:
+
+https://user-images.githubusercontent.com/494398/119168712-d5c47600-ba7e-11eb-95ed-b4e1d58456d0.mp4
+
+
+
+
 ## Combining Images
 
 `./render_pngs_to_video.py` creates `mp4` video by combining seqeunce of individual frames stored as images. For instance,
