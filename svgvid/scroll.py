@@ -142,8 +142,17 @@ class Scroller:
 
 # test
 if __name__ == '__main__':
-    scroller = Scroller(svg="./scrolling_titles.svg",
-                        outpath="/tmp/rendered/",
+    import sys
+    from pathlib import Path
+    import tempfile
+
+    # os.getcwd() gives the current working directory,
+    # not necessarily the dir where the script is located.
+    script_path = sys.path[0]
+    svg = Path(script_path).parent / "examples" / "scrolling_titles.svg"
+    rendered = Path(tempfile.gettempdir()) / "rendered"
+    scroller = Scroller(svg=svg,
+                        outpath=rendered,
                         frame_width_px=1920, frame_height_px=1080,
                         fps=30, pace=8,
                         enable_caching=True

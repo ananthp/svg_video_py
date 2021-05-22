@@ -1,4 +1,4 @@
-# SVG Video Py
+# svgvid
 
 Utilities to produce videos using SVG files.
 
@@ -17,10 +17,10 @@ https://user-images.githubusercontent.com/494398/119168712-d5c47600-ba7e-11eb-95
 
 ## Combining Images
 
-`./render_pngs_to_video.py` creates `mp4` video by combining seqeunce of individual frames stored as images. For instance,
+`render.py` creates `mp4` video by combining seqeunce of individual frames stored as images. For instance,
 you can use `scroll.py` to generate the images, and finally produce the video with this script. (Other video tools, notably blender, also generate image sequences).
 
-`./render_pngs_to_video.py --help` for detailed usage info.
+`svgvid/render.py --help` for detailed usage info.
 
 Notes:
 

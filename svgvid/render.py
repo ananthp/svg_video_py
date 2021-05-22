@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-import argparse
 from pathlib import Path
 import subprocess
-import os
 
-class Renderer:
+class VideoRenderer:
+    """Converts sequence of frames stored as images to video."""
+
     def __init__(self, args):
         self.args = args
         self.validate_indir()
@@ -70,11 +70,13 @@ class Renderer:
         subprocess.run(command)
 
 if __name__ == '__main__':
+    import argparse
+
     parser = argparse.ArgumentParser(
             description="Renders seqeunce of images as video",
             epilog="""
-                Some tools generate video sequences as sequentially numbered images. E.g. blender, and my other script
-                that generates scrolling videos.
+                Some tools generate video sequences as sequentially numbered images. E.g. blender, other tools
+                in this project.
 
                 This script combines the images and renders them as video. The format and settings used in the video
                 are based on the recommendations by youtube.
@@ -90,5 +92,5 @@ if __name__ == '__main__':
     parser.add_argument('--digits', '-d', type=int, default=6, help="number of zero-padded digits used in png sequence. Defaults to 6")
     args = parser.parse_args()
 
-    renderer = Renderer(args)
+    renderer = VideoRenderer(args)
     renderer.render()
