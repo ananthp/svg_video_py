@@ -30,6 +30,14 @@
 * start frame, end frame
 * preserve frame number
 
+## [Feature] scroll: infer frame size
+
+Currently we have to manually specify frame size to `Scroller`. There are ways to get the frame size from the SVG file automatically:
+* read width and height from svg header.
+    - possibility of height/width attributes missing, different units, viewbox, scaling etc makes this tricky. any lib does this already?
+* render the page using inkscape (`--export-area-page`) and inspect the generated file.
+    - rendering could take time.
+
 ## [Refactor] make calculations absolute, not relative to current state
 
 currently, there's a rectangle object pointing to the current frame coordinates, and the progress is made by moving the rectangle successivly and making cuts. This is problematic for the following reasons:
