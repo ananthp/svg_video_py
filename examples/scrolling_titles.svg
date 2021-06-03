@@ -635,10 +635,10 @@
      pagecolor="#000000"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.30929718"
-     inkscape:cx="847.70117"
+     inkscape:cx="839.61833"
      inkscape:cy="13404.312"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -652,7 +652,8 @@
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:snap-global="false">
+     inkscape:snap-global="false"
+     inkscape:pagecheckerboard="true">
     <sodipodi:guide
        position="0,197.04994"
        orientation="-1,0"
@@ -676,7 +677,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
