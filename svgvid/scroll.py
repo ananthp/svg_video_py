@@ -1,15 +1,18 @@
 #!/bin/env python3
 
-from PIL import Image
 from dataclasses import dataclass
 from enum import Enum, auto
-from matplotlib import pyplot as plt
 from pathlib import Path
 import math
-import numpy as np
 import os
 import subprocess
+import sys
 import tempfile
+
+from PIL import Image
+from matplotlib import pyplot as plt
+import numpy as np
+
 
 @dataclass
 class Point:
@@ -20,11 +23,14 @@ class Point:
     def unpack(self):
         return self.x, self.y
 
+
 ORIGIN = Point(0, 0)
+
 
 class Caching(Enum):
     MEMORY = auto(),
     PNG = auto(),
+
 
 class Rect:
     def __init__(self, top_left: Point, width_px, height_px):
@@ -45,10 +51,11 @@ class Rect:
         self.y1 += by_px
         self.y2 += by_px
 
+
 def export_area(rect, source, png):
     x1, y1 = rect.top_left().unpack()
     x2, y2 = rect.bottom_right().unpack() #inclusive
-    if type(source) == np.ndarray:
+    if isinstance(source, np.ndarray):
         x1 = round(x1)
         y1 = round(y1)
         # due to semi-open intervals in np ranges, the second point is not inclusive.
@@ -61,17 +68,19 @@ def export_area(rect, source, png):
         frame.save(png)
     elif str(source).endswith('.svg'):
         coords = f"{x1}:{y1}:{x2}:{y2}"
-        result = subprocess.run(["inkscape", "--export-area", coords, "-o", png, source], capture_output=True)
+        result = subprocess.run(["inkscape", "--export-area", coords, "-o", png, source], capture_output=True, check=True)
         try:
             result.check_returncode()
         except subprocess.CalledProcessError:
             print(result.stdout.decode("UTF-8"))
             print(result.stderr.decode("UTF-8"))
-            exit(f"Exporting {rect} of {source} to {png} failed.\n")
+            sys.exit(f"Exporting {rect} of {source} to {png} failed.\n")
+
 
 def calculate_advance(height, pace, fps):
     shift_px_per_sec = height / pace
     return shift_px_per_sec / fps
+
 
 class Scroller:
     def __init__(self, svg, outpath, frame_width_px, frame_height_px, fps, pace, caching=Caching.MEMORY):
@@ -84,8 +93,10 @@ class Scroller:
         pace: Number of seconds to scroll one screen full. float.
         caching:
             None - no caching. each frame gets rendered directly from svg.
-            Caching.MEMORY - default. renders the whole image once and caches in memory. fastest, but uses more memory.
-            Caching.PNG - renders the whole image once as a png file, and exports each frame from it. slightly faster than `None`.
+            Caching.MEMORY - default. renders the whole image once and caches in memory.
+                             fastest, but uses more memory.
+            Caching.PNG - renders the whole image once as a png file and exports each frame from it.
+                          slightly faster than `None`.
         """
         self.svg = Path(svg)
         self.outpath = Path(outpath)
@@ -148,7 +159,7 @@ class Scroller:
         gets the height of the drawing using inkscape.
         This is nothing to do with the page size.
         """
-        result = subprocess.run(["inkscape", "--query-height", self.svg], capture_output=True)
+        result = subprocess.run(["inkscape", "--query-height", self.svg], capture_output=True, check=True)
         try:
             height = float(result.stdout)
 
@@ -160,14 +171,10 @@ class Scroller:
         except ValueError:
             print(result.stdout.decode("UTF-8"))
             print(result.stderr.decode("UTF-8"))
-            exit("Getting dimensions from SVG failed.\n")
+            sys.exit("Getting dimensions from SVG failed.\n")
 
-# test
+
 if __name__ == '__main__':
-    import sys
-    from pathlib import Path
-    import tempfile
-
     # os.getcwd() gives the current working directory,
     # not necessarily the dir where the script is located.
     script_path = sys.path[0]
