@@ -1,4 +1,4 @@
-#!/bin/env python3
+"""Generates scrolling videos."""
 
 from dataclasses import dataclass
 from enum import Enum, auto
@@ -172,17 +172,3 @@ class Scroller:
             print(result.stdout.decode("UTF-8"))
             print(result.stderr.decode("UTF-8"))
             sys.exit("Getting dimensions from SVG failed.\n")
-
-
-if __name__ == '__main__':
-    # os.getcwd() gives the current working directory,
-    # not necessarily the dir where the script is located.
-    script_path = sys.path[0]
-    svg = Path(script_path).parent / "examples" / "scrolling_titles.svg"
-    rendered = Path(tempfile.gettempdir()) / "rendered"
-    scroller = Scroller(svg=svg,
-                        outpath=rendered,
-                        frame_width_px=1920, frame_height_px=1080,
-                        fps=30, pace=8,
-                        )
-    scroller.render()
