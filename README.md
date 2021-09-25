@@ -19,8 +19,7 @@ Note: `Scroller` Requires [inkscape](https://inkscape.org) to be installed on th
 
 ## Combining Images
 
-`render.py` creates `mp4` video by combining seqeunce of individual frames stored as images. For instance,
-you can use `Scroll` to generate the images, and finally produce the video with this script. (Other video tools, notably blender, also generate image sequences).
+`render.py` creates `mp4` video by combining sequence of individual frames stored as images. For instance, you can use `Scroll` to generate the images, and finally produce the video with this script. (Other video tools, notably blender, also generate image sequences).
 
 `svgvid/render.py --help` for detailed usage info.
 
