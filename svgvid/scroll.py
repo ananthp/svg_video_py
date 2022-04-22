@@ -1,22 +1,23 @@
 """Generates scrolling videos."""
 
-from dataclasses import dataclass
-from enum import Enum, auto
-from pathlib import Path
 import math
 import os
 import subprocess
 import sys
 import tempfile
+from dataclasses import dataclass
+from enum import Enum, auto
+from pathlib import Path
 
-from PIL import Image
-from matplotlib import pyplot as plt
 import numpy as np
+from matplotlib import pyplot as plt
+from PIL import Image
 
 
 @dataclass
 class Point:
     """a 2D Point"""
+
     x: float
     y: float
 
@@ -28,8 +29,8 @@ ORIGIN = Point(0, 0)
 
 
 class Caching(Enum):
-    MEMORY = auto(),
-    PNG = auto(),
+    MEMORY = auto()
+    PNG = auto()
 
 
 class Rect:
@@ -48,27 +49,32 @@ class Rect:
         return Point(self.x2, self.y2)
 
     def shift_down(self, by_px):
-        self.y1 += by_px
-        self.y2 += by_px
+        """Return a new Rect with coordinates of current rect shifted down by by_px."""
+        return Rect(Point(self.x1, self.y1 + by_px), self.width, self.height)
 
 
 def export_area(rect, source, png):
     x1, y1 = rect.top_left().unpack()
-    x2, y2 = rect.bottom_right().unpack() #inclusive
+    x2, y2 = rect.bottom_right().unpack()  # inclusive
     if isinstance(source, np.ndarray):
         x1 = round(x1)
         y1 = round(y1)
         # due to semi-open intervals in np ranges, the second point is not inclusive.
         x2 = x1 + rect.width + 1
-        y2 = y1 + rect.height + 1
+        y2 = y1 + rect.height  # + 1?
         frame = source[y1:y2, x1:x2]
+        assert np.shape(frame) == (rect.height, rect.width, 4)
         plt.imsave(png, frame)
-    elif str(source).endswith('.png'):
+    elif str(source).endswith(".png"):
         frame = Image.open(source).crop((x1, y1, x2, y2))
         frame.save(png)
-    elif str(source).endswith('.svg'):
+    elif str(source).endswith(".svg"):
         coords = f"{x1}:{y1}:{x2}:{y2}"
-        result = subprocess.run(["inkscape", "--export-area", coords, "-o", png, source], capture_output=True, check=True)
+        result = subprocess.run(
+            ["inkscape", "--export-area", coords, "-o", png, source],
+            capture_output=True,
+            check=True,
+        )
         try:
             result.check_returncode()
         except subprocess.CalledProcessError:
@@ -83,13 +89,21 @@ def calculate_advance(height, pace, fps):
 
 
 class Scroller:
-    def __init__(self, svg, outpath, frame_width_px, frame_height_px, fps, pace, caching=Caching.MEMORY):
+    def __init__(
+        self,
+        svg,
+        outpath,
+        frame_width_px,
+        frame_height_px,
+        fps,
+        pace,
+        caching=Caching.MEMORY,
+    ):
         """
         svg: input SVG file path.
         outpath: directory to render output frames.
         frame_width_px, frame_height_px: width and height of the video frame.
-        bottom_px: Y coordinate of the bottom of the SVG drawing in px. Decides how far to scroll.
-
+        fps: frames per second. integer.
         pace: Number of seconds to scroll one screen full. float.
         caching:
             None - no caching. each frame gets rendered directly from svg.
@@ -100,75 +114,96 @@ class Scroller:
         """
         self.svg = Path(svg)
         self.outpath = Path(outpath)
-        self.rect = Rect(ORIGIN, frame_width_px, frame_height_px)
+        self.RECT = Rect(ORIGIN, frame_width_px, frame_height_px)
         self.fps = fps
         self.caching = caching
         # number of pixels to shift down for each frame
         self.advance_px = calculate_advance(height=frame_height_px, pace=pace, fps=fps)
 
+    def estimate_frames(self):
+        return math.ceil(self.get_svg_height() / self.advance_px) + 1
+
+    def get_frame_rect(self, frame_no):
+        """Calculate the rectangle for the given frame number."""
+        return self.RECT.shift_down(frame_no * self.advance_px)
+
     def render(self):
         self.validate_input()
         self.create_outpath_if_required()
 
-        source = self.svg
-        if self.caching:
-            tmpdir = tempfile.TemporaryDirectory()
-            source = self.cache(tmpdir)
+        source = self.cache(tempfile.TemporaryDirectory()) if self.caching else self.svg
 
-        total_height = self.get_svg_height()
-
-        estimated_frames = math.ceil(total_height / self.advance_px) + 1
+        estimated_frames = self.estimate_frames()
         for current_frame in range(estimated_frames):
             print(f"Rendering Frame {current_frame+1} / {estimated_frames}")
-            export_area(rect=self.rect,
-                    source=source,
-                    png=self.output_file_path(current_frame))
-            self.advance()
+            export_area(
+                rect=self.get_frame_rect(current_frame),
+                source=source,
+                png=self.output_file_path(current_frame),
+            )
 
     def cache(self, tmpdir):
-        # we have to cache the full image + one screen full of the botom portion
+        # we have to cache the full image + some extra
         # to fully scroll away the contents.
-        full_height = self.get_svg_height() + self.rect.height
-        full_image_png = Path(tmpdir.name)/"full.png"
-        export_area(rect=Rect(ORIGIN, self.rect.width, full_height),
-                source=self.svg,
-                png=full_image_png)
+        n_frames = self.estimate_frames()
+        last_rect = self.get_frame_rect(n_frames - 1)  # 0 indexing
+        full_height = last_rect.y2 + 1  # to prevent any rounding errors
+        full_image_png = Path(tmpdir.name) / "full.png"
+        export_area(
+            rect=Rect(ORIGIN, self.RECT.width, full_height),
+            source=self.svg,
+            png=full_image_png,
+        )
 
         if self.caching == Caching.PNG:
             return full_image_png
         elif self.caching == Caching.MEMORY:
             return plt.imread(full_image_png)
 
-    def advance(self):
-        self.rect.shift_down(self.advance_px)
-
     def output_file_path(self, frame_number):
         result = self.outpath / f"{frame_number:06}.png"
         return result.resolve()
 
     def validate_input(self):
-        # TODO
-        pass
+        assert self.svg.exists()
 
     def create_outpath_if_required(self):
         if not self.outpath.exists():
             os.makedirs(self.outpath.resolve())
 
-    def get_svg_height(self):
+    def _query_svg(self, param):
         """
-        gets the height of the drawing using inkscape.
-        This is nothing to do with the page size.
+        Query the SVG using inkscape, returns units in pixels
+        param: can be
+            "top-x", "top-y"
+            "width", "height"
         """
-        result = subprocess.run(["inkscape", "--query-height", self.svg], capture_output=True, check=True)
-        try:
-            height = float(result.stdout)
+        query = {
+            "left-x": "--query-x",  # top-left x of the drawing
+            "top-y": "--query-y",
+            "width": "--query-width",  # of drawing, not page
+            "height": "--query-height",
+        }.get(param)
 
-            # The image may start at the middle or
-            # bottom of the page. The space above the first chunk
-            # is not accounted.
-            # adding a frame height ensures video scrolls fully
-            return math.ceil(height + self.rect.height)
+        assert query
+
+        result = subprocess.run(
+            ["inkscape", query, self.svg], capture_output=True, check=True
+        )
+        try:
+            value = float(result.stdout)
+
+            return value
         except ValueError:
             print(result.stdout.decode("UTF-8"))
             print(result.stderr.decode("UTF-8"))
             sys.exit("Getting dimensions from SVG failed.\n")
+
+    def get_svg_height(self):
+        """
+        Get the total height of the drawing using inkscape.
+
+        This includes the free space above the start of the page.
+        This is nothing to do with the page size.
+        """
+        return math.ceil(self._query_svg("top-y") + self._query_svg("height"))

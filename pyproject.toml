@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "svgvid"
+version = "0.1.0"
+description = "Utilities to produce videos using SVG files."
+authors = ["Ananth P <ananth.pattabiraman@gmail.com>"]
+license = "Apache License"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.0.0"
+matplotlib = "^3.0.0"
+Pillow = "^9.0.1"
+opencv-python = "^4.0.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+# to make vim usable while in project venv
+pynvim = "*"
+python-lsp-server = "*"
+ropevim = "*"
+pyls-flake8 = "*"
+pyls-isort = "*"
+python-lsp-black = "*"
+
+[tools.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
